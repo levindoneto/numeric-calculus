@@ -1,0 +1,16 @@
+dec2bin(10)
+dec2hex(10)
+
+bin2dec('10')
+hex2dec('10')
+
+para valores com virgula, só transformar o valor à direita da virgula em notação binaria e depois tirar o valor dela em hex ou dec
+tipo: hex2dec('1.C')
+1 vai ser 1 em dec tbm,
+.C em bin é: .1100, que em dec é .5+.25+0+0 = .75
+-------------------------------------------------------
+Para achar a intersecção entre curvas basta fazer uma função menos a outra.
+Em newton a f(x) vira uma(x) - outra(x)
+-------------------------------------------------------
+cancelamento catastrofico em y = f(x), são os valores onde y=0,
+montar tipo algo*n a resposta
