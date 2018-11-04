@@ -17,4 +17,5 @@ x1 = [0 0 0 0 0 0 0 0]' // Chute inicial
  * b-Ax: residuo
  * kappa1 = norm(A,1)*norm(inv(A),1) pra ver o condicionamento, 8 é baixo nesse exemplo, entao A e' bem condicionada
  * 78 iteracoes foram necessarias nesse exemplo no jacobi e 7 no gauss_seidel
+ * O que é printado no console: [k,x',deltax]
  */
