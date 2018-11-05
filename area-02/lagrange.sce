@@ -38,12 +38,3 @@ plot(X,p,'b.-') // Plota interpolacao
    L(4,x,2) = 0
    L(6,x,2) = 0
  */
- 
- 
- 
- 
- 
- 
- 
- 
- 
