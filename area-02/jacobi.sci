@@ -1,3 +1,4 @@
+clear
 function [x,deltax]=jacobi(A,b,x,tol,N)
 /**
  * A  : Matriz de coeficientes

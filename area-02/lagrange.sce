@@ -1,3 +1,4 @@
+clear
 /* Funcao para pegar os polinomios de lagrange
  * X: Ponto (escalar) onde a interpolacao esta' sendo calculada
  * x: Vetor de todos pontos para interpolar a funcao

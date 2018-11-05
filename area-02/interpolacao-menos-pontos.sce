@@ -1,3 +1,4 @@
+clear
 /**
  * Se diz pra extrapolar/interpolar em menos pontos,
  * só meter menos pontos nos vetores abaixo
@@ -21,6 +22,6 @@ X=4.1 // x para interpolar
 // Chamar "p" no scilab ao final da execucao
 p=0
 for k=1:n
-    p=p+a(k)*X.^(k-1)//monta o polinomio
+    p=p+a(k)*X.^(k-1) //Monta o polinomio
 end
 plot(X,p,'b.-')

@@ -1,3 +1,4 @@
+clear
 function [x,deltax]=gauss_seidel(A,b,x,tol,N)
 /**
  * A  : Matriz de coeficientes

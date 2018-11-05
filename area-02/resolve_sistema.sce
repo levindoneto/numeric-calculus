@@ -1,3 +1,4 @@
+clear
 // Resolve sist.triangular U
 function [x]=solveU(U,b)
     n=size(U,1)   // # de linhas

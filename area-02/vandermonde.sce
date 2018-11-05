@@ -1,3 +1,4 @@
+clear
 x=[1 3 4 6]' // 4 pontos -> curva com 4-1 pontos
 y=sin(x)
 n=length(x); // size(x,1)
