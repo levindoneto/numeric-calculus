@@ -39,7 +39,7 @@ for i=1:p+1
 end
 residuo = residuo - y;
 
-plot(XX,YY,'b.');xgrid
+plot(XX,YY,'b-');xgrid
 
 
 t=2;
