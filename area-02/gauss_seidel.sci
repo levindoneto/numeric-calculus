@@ -25,9 +25,9 @@ while k<=N & ~convergiu
     if deltax<tol then
         convergiu = %T // true
     end
-    k = k+1
+    k = k+1 // k: indice da iteracao
     x = xnew // atualiza x
-    disp([k,x',deltax]) // debug
+    disp([k,x']) // debug -> x e' o vetor resposta
 end
 if ~convergiu then
     error('Nao convergiu')

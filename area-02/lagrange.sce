@@ -30,6 +30,10 @@ end
 plot(X,p,'b.-') // Plota interpolacao
 
 /** Teste final
+ * Se pedir Ln(m), rodar no console L(n,x,m) para obter a resposta
+ */
+ 
+/** Teste final
  * x = 1.
        3.
        4.

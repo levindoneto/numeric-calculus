@@ -27,7 +27,7 @@ while k<=N & ~convergiu
     end
     k = k+1
     x = xnew // atualiza x
-    disp([k,x',deltax]) // debug
+    disp([k,x']) // debug
 end
 if ~convergiu then
     error('Nao convergiu')
