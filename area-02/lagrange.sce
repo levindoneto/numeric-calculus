@@ -16,8 +16,8 @@ function y=L(X,x,k)
 endfunction
 
 // Abaixo roda o exemplo para interpolar pontos de x
-x=[1 3 4 6]' // 4 pontos -> curva com 4-1 pontos
-y=sin(x)
+x=[5 6 7 8]' // 4 pontos -> curva com 4-1 pontos
+y=[1 3 4 2]'
 n=length(x); // size(x,1)
 plot(x,y,'ro-'),xgrid // Faz grafico dos pontos
 
@@ -30,7 +30,7 @@ end
 plot(X,p,'b.-') // Plota interpolacao
 
 /** Teste final
- * Se pedir Ln(m), rodar no console L(n,x,m) para obter a resposta
+ * Se pedir Ln(m), rodar no console L(m,x,n) para obter a resposta
  */
  
 /** Teste final
@@ -42,4 +42,6 @@ plot(X,p,'b.-') // Plota interpolacao
    L(3,x,2) = 1 -> Pq 3 é o 2o elemento do vetor x
    L(4,x,2) = 0
    L(6,x,2) = 0
+   
+   L(valor,vetor,posicao)
  */

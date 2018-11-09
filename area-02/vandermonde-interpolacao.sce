@@ -1,6 +1,6 @@
 clear
-x=[5 6 7 8]' // 4 pontos -> curva com 4-1 pontos
-y=[6 7 10 11]'
+x=[2 3]' // 4 pontos -> curva com 4-1 pontos (tinha 4 pontos, botei 2 do meio pq pediu)
+y=[7 10]'
 n=length(x); // size(x,1)
 
 plot(x,y,'ro-'),xgrid // Faz grafico dos pontos
@@ -16,7 +16,7 @@ a = inv(V)*y //  ao inves de resolver por LU
 
 
 p = 0// init no polinomio p
-X = 6.1 // Valor de x em 1 ponto pra interpolar
+X = 2.8 // Valor de x em 1 ponto pra interpolar
 
 //X = 5:0.1:8 // 0.5, 0.6, ..., 6.5
 for k=1:n
@@ -27,3 +27,4 @@ end
 plot(X,p,'b.-') 
 
 // numero_condicionamento = norm(V,1)*norm(inv(V),1)
+// >>>Valor no ponto de interpoolacao e' o p<<<
