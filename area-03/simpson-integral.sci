@@ -1,3 +1,4 @@
+clear
 /**
  * a: limite esquerdo
  * b: limite direito
@@ -7,7 +8,6 @@
 function S=simpson(a,b,n)
     h=(b-a)/n // tamanho do intervalo
     x=linspace(a,b,n+1) // vetor de a ate' b com n+1 elementos
-    
     S=0
     for i=1:n
         x1=x(i) // extremo esquerdo
@@ -22,7 +22,12 @@ endfunction
 
 // Funcao para ser integrada
 function y=f(x)
-    y=exp(x)
+    y=10*cos(x+2)+10
+endfunction
+
+// Devolve a integral definida da funcao para comparacao com metodos iterativos
+function v=integral(limiteEsquerda, limiteDireita, funcao)
+    v = intg(limiteEsquerda, limiteDireita, funcao)
 endfunction
 
 // resposta pode ser obtida em: simpson(inicio,final,numero_intervalos)

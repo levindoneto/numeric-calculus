@@ -2,14 +2,12 @@ clear
 /**
  * a: limite esquerdo
  * b: limite direito
- * n: numero de iteracoes
+ * n: numero de iteracoes/intervalos
  * S: area apos integrar a funcao
  */
 function S=trapezio(a,b,n)
-    // n numero de intervalos
     h=(b-a)/n
     x=linspace(a,b,n+1) // cria vetor de a ate' b com n+1 pontos
-    
     S=0
     for i=1:n // percorre todos intervalos
         x1 = x(i) // esquerda do intervalo
