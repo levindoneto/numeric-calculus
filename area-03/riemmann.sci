@@ -1,5 +1,5 @@
 clear
-/**
+/** Somas de riemmann a esquerda
  * a: limite esquerdo
  * b: limite direito
  * n: numero de iteracoes

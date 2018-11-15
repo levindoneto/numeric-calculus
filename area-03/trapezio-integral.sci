@@ -4,6 +4,8 @@ clear
  * b: limite direito
  * n: numero de iteracoes/intervalos
  * S: area apos integrar a funcao
+ *
+ * >>> n=abs((a-b)/h) caso n nao seja dado
  */
 function S=trapezio(a,b,n)
     h=(b-a)/n
