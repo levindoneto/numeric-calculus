@@ -1,3 +1,4 @@
+clear
 /**
  * a: limite esquerdo
  * b: limite direito
@@ -22,7 +23,12 @@ endfunction
 
 // Funcao a ser integrada e' dada por y
 function y=f(x)
-    y=exp(x)
+    y=sin(cos(2*x))
+endfunction
+
+// Devolve a integral definida da funcao para comparacao com metodos iterativos
+function v=integral(limiteEsquerda, limiteDireita, funcao)
+    v = intg(limiteEsquerda, limiteDireita, funcao)
 endfunction
 
 // valor da integral fica em trapezio(inicio, fim, numero_intervalos)
