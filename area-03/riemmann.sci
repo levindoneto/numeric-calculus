@@ -3,6 +3,7 @@ clear
  * a: limite esquerdo
  * b: limite direito
  * n: numero de iteracoes
+ *
  * S: area apos integrar a funcao
  */
 function S=riemmann(a,b,n)
