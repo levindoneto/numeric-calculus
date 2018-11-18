@@ -4,7 +4,8 @@ clear
  *  integral de f(x), a qual e' definida apos essa funcao.
  * a: limite esquerdo
  * b: limite direito
- * n: numero de iteracoes
+ * n_intervalos: numero de iteracoes/intervalos
+ * n_nodes: numero de nos (1 - 5 estao mapeados)
  *
  * S: area apos integrar a funcao
  */
