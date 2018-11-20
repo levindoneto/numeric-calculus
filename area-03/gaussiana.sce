@@ -73,5 +73,5 @@ endfunction
 
 //definição da função
 function y=f(x)
-    y=sin(sin(sin(x)))
+    y=x.^5 - 8.*x + 8
 endfunction

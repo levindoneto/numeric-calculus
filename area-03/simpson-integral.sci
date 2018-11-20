@@ -3,6 +3,7 @@ clear
  * a: limite esquerdo
  * b: limite direito
  * n: numero de iteracoes
+ *
  * S: area apos integrar a funcao
  */
 function S=simpson(a,b,n)
@@ -22,7 +23,7 @@ endfunction
 
 // Funcao para ser integrada
 function y=f(x)
-    y=10*cos(x+2)+10
+    y=sqrt(2*x)
 endfunction
 
 // Devolve a integral definida da funcao para comparacao com metodos iterativos
