@@ -1,20 +1,20 @@
 clear
 /**
- * t_dado, u_dado: u dado -> u(t_dado) = u_dado
+ * u_dado: u dado -> u(TINIT) = u_dado
  * t_final: tempo final -> u(t_final)
- * h: tamanho do intervalo
+ * n_intervalos: numero de intervalos
  * com_grafico: plota grafico da funcao se %T e nao se %F
  * 
  * [u]: aproximacao com o metodo de euler 
  *      -> valor final e' o ultimo no vetor
  */
-function [u]=euler(t_dado, u_dado, t_final, h, com_grafico) //a,T,h
-    t(1)=1; // init t
-    u(t_dado)=u_dado;      
-    Nint=(t_final-t(1))/h; // numero de intervalos
-    for n=1:Nint
+function [u]=euler_int(t_dado, u_dado, t_final, n_intervalos, com_grafico)
+    t(1)=1 // init t
+    u(t_dado+1)=u_dado // deve ser t_dado+1 nese caso
+    h=(t_final-t(1))/n_intervalos
+    for n=1:n_intervalos
         t(n+1)=t(n)+h;
-        u(n+1)=u(n)+h*f(t(n),u(n));
+        u(n+1)=u(n)+h*f(t(n),u(n))
     end
     ufinal=u(n+1);
     if com_grafico then
@@ -24,5 +24,5 @@ endfunction
 
 // Funcao u' (DERIVADA)
 function y=f(t,u)
-    y=sin(u);
+    y=sin(u)
 endfunction
