@@ -9,7 +9,7 @@ clear
  * h: tamanho do intervalo
  * com_grafico: plota grafico da funcao se %T e nao se %F
  * 
- * [u]: aproximacao com o metodo de euler 
+ * [u]: aproximacao com o metodo de Euler 
  *      -> valor final e' o ultimo no vetor
  */
 function [u]=euler(t_dado, u_dado, t_final, h, com_grafico)
