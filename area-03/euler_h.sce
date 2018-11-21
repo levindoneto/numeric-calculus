@@ -1,4 +1,8 @@
 clear
+/*************************************************
+ *          NAO ESQUECER DE MUDAR A f(t,u)       *
+ ************************************************/
+ 
 /**
  * t_dado, u_dado: u dado -> u(t_dado) = u_dado
  * t_final: tempo final -> u(t_final)
@@ -8,8 +12,8 @@ clear
  * [u]: aproximacao com o metodo de euler 
  *      -> valor final e' o ultimo no vetor
  */
-function [u]=euler(t_dado, u_dado, t_final, h, com_grafico) //a,T,h
-    t(1)=1; // init t
+function [u]=euler(t_dado, u_dado, t_final, h, com_grafico)
+    t(1)=1; // t(0) -> init
     u(t_dado)=u_dado;      
     Nint=(t_final-t(1))/h; // numero de intervalos
     for n=1:Nint
@@ -22,7 +26,10 @@ function [u]=euler(t_dado, u_dado, t_final, h, com_grafico) //a,T,h
     end
 endfunction
 
+disp("*************************************************");
+disp(">>>>> NAO esquece de trocar a funcao f(t,u) <<<<<");
+disp("*************************************************");
 // Funcao u' (DERIVADA)
 function y=f(t,u)
-    y=sin(u);
+    y=u*t;
 endfunction

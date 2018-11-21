@@ -23,7 +23,7 @@ endfunction
 
 // Funcao para ser integrada
 function y=f(x)
-    y=sqrt(2*x)
+    y=cos(2*x)
 endfunction
 
 // Devolve a integral definida da funcao para comparacao com metodos iterativos
