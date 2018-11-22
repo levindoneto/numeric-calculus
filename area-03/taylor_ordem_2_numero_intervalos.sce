@@ -8,7 +8,10 @@ clear
   * iteracao n  : x.iiii... para 4 digitos nesse caso
   *
   * Moral e' meter um numero_intervalos gigante (e.g.100000) 
-  * e ver o ultimo valor
+  * e ver o ultimo valor.
+  *
+  * Se a questao passa u(0) = u_dado, o u(t_dado) aproximado deve ser
+  * u(t_dado+1) no parametro.
   */
  
 /**
@@ -21,6 +24,9 @@ clear
  *      -> valor final e' o ultimo no vetor
  */
 function [u]=taylor_2_n(t_dado, u_dado, t_final, numero_intervalos, com_grafico)
+    if(t_dado == 0) then
+        error(">>> Se u(0) = algo, passar t_dado como 1, e t_final como t_final+1");
+    end
     t(1) = 1; // t(0) -> init
     u(t_dado) = u_dado; // condicao inicial do PVI
     h = (t_final-t(1)) / numero_intervalos; // tamanho do intervalo
@@ -42,10 +48,10 @@ disp("*>>>>        NAO esquece de trocar as derivadas         <<<<<");
 disp("*************************************************************");
 // Funcao u' (DERIVADA DE PRIMEIRA ORDEM)
 function y=f(t,u)
-    y=u*t;
+    y=sin(u);
 endfunction
 
 // Funcao u'' (DERIVADA DE SEGUNDA ORDEM)
 function y=ft(t,u)
-    y=(u*t^2)+u;
+    y=cos(u)*u;
 endfunction
