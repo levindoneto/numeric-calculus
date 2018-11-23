@@ -1,5 +1,6 @@
 // Aproximacao de derivada dupla
-// f{xx}(xn) = [c1*f{n} + c2*f{n+1} + c3*f_{n+3}] / h^2
+// f{xx}(xn) = [c1*f{n+0} + c2*f{n+1} + c3*f_{n+3}] / h^2
+//                     ^           ^            ^  
 // Os x sao os pontos onde a f(x) e' calculada
 
 x(1) = 0;
